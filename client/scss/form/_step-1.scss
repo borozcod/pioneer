@@ -1,0 +1,43 @@
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+
+
+#step-1{
+    opacity: 0;
+
+/* Pretty checkbox overrides  */
+.pretty {
+    white-space: inherit;
+    width: 100%;
+}
+
+.pretty .state label{
+      text-indent: 0;
+      padding-left: 2rem;
+}
+
+.pretty .state label:after,
+.pretty .state label:before{
+     top: 0;
+}
+    .interest {
+        font-size: 20px;
+        font-family: 'Trade';
+        text-transform: uppercase;
+        margin: 10px 0px;
+        padding: 10px;
+        border-bottom: solid 1px $gray;
+        @media screen and (max-width: $break-medium) {
+            font-size: 18px;
+          }
+          @media screen and (max-width: $break-small) {
+              font-size: 16px;
+            }
+        label {
+            margin-left: 10px;
+        }
+
+
+
+    }
+
+}

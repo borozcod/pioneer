@@ -1,0 +1,60 @@
+#confirmation {
+    opacity: 0;
+    .team-member {
+        height: 200px;
+        width: 200px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .team-wraper {
+        position: relative;
+        .ping {
+            background-color: $blue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        	-webkit-animation: ping 1.5s ease-in-out  both;
+        	animation: ping 1.5s ease-in-out  both;
+        }
+    }
+}
+
+@-webkit-keyframes ping {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,50 @@
+#step-2 {
+    opacity: 0;
+    input {
+        display: block;
+        padding: 8px 15px;
+        margin: 0px 0px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border: solid 1px $gray;
+        border-radius: 4px;
+    }
+
+    select {
+        display: block;
+        padding: 8px 20px;
+        margin: 0px 0px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border: solid 1px $gray;
+        border-radius: 4px;
+        text-transform: capitalize;
+    }
+
+    textarea {
+        display: block;
+        padding: 8px 20px;
+        margin: 0px 0px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border: solid 1px $gray;
+        border-radius: 4px;
+    }
+    .missing-field {
+        position: relative;
+        .missing {
+            display: none;
+            color: $red;
+            font-family: 'Trade';
+            text-transform: uppercase;
+            margin: 5px 0px;
+            &.show {
+                display: inline-block!important;
+            }
+        }
+    }
+    .label {
+        font-family: 'Trade';
+        font-size: 18px;
+    }
+}

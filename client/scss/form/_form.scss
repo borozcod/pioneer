@@ -1,0 +1,67 @@
+@import "./step-1";
+@import "./step-2";
+@import "./confirmation";
+
+.form {
+    max-width: 700px;
+    margin: 40px 10px;
+    display: block;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #808080;
+    transform: translateY(100%);
+    opacity: 0;
+    @media screen and (min-width: 600px) {
+        margin: 40px auto;
+      }
+    .header {
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        margin: -20px;
+        margin-bottom: 20px;
+        border-radius: 8px 9px 0px 0px;
+        h1 {
+            margin: 0px;
+            padding: 20px 0px 10px;
+        }
+        h2 {
+            margin: 0px 20px;
+            padding: 10px 0px 20px;
+            font-family: 'SandalsType';
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+    }
+
+    .pagination {
+        margin: 40px 0px;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+        button {
+            transition-delay: 1s;
+            transition: opacity .25s ease-in;
+            padding: 10px 20px;
+            background-color: $blue;
+            font-family: 'Trade';
+            text-transform: uppercase;
+            color: white;
+            font-size: 20px;
+            margin: 0px 10px;
+            border: 0px;
+            border-radius: 8px;
+        }
+    }
+}
+
+.copy {
+    text-align: center;
+    color: #969696;
+    font-size: 20px;
+    font-family: 'SandalsType';
+}
+
+.thank-you {
+    text-align: center;
+}

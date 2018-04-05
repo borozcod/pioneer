@@ -1,0 +1,52 @@
+@import "./scss/main";
+  
+body {
+	margin: 0px;
+	position:relative;
+	#time-loc {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		position: absolute;
+	    top: 50%;
+	    background-color: #000;
+	    text-align: center;
+	    height: auto;
+	    padding: 25px;
+	    opacity: 0;
+	    color: #fff;
+	    left: 50%;
+	    font-size: 20px;
+	    transform: translate(-50%, -50%);
+	    z-index: 10;
+	    width: 100%;
+    	max-width: 400px;
+    	margin: 0px 10px;
+    	h2 {
+    		margin: 10px 0px;
+    	}
+    	#time {
+    		margin-bottom: 	45px;
+    	}
+    	.t, .l {
+    		font-size: 30px;
+    		border-bottom: 2px dotted #fff;
+    	}
+    	.l {
+    		margin-bottom: 	20px;
+    		display: block;
+    	}
+	}
+	.share {
+    		position: absolute;
+		    bottom: 20px;
+		    right: 20px;
+		    z-index: 20;
+		    width: auto;
+		    color: #fff;
+		    background-color: #000;
+		    a {
+		    	font-size: 20px;
+		    	padding: 15px;
+		    }
+    	}
+}
